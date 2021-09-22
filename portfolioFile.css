@@ -172,7 +172,7 @@
 #content #homePage #Intro p {
   color: rgb(1, 65, 75);
   font-family: fantasy;
-  font-size: 18px;
+  font-size: 16px;
 }
 #content #homePage #Intro #name {
   font-size: 28px;
@@ -316,8 +316,8 @@
 #content #Project #ProjectSection h5 {
   color: rgb(4, 42, 49);
   font-family: monospace;
-  border-top-right-radius: 18px;
-  border-bottom-left-radius: 18px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 16px;
   padding: 4px;
   font-weight: bold;
   font-size: 11px;
@@ -370,7 +370,7 @@
 #content #Project #ProjectSection span {
   width: fit-content;
   padding: 6px;
-  border-radius: 18px;
+  border-radius: 16px;
   text-align: center;
   line-height: 12px;
 }
@@ -534,6 +534,7 @@
 #content #Contact {
   display: flex;
   flex-direction: column;
+  row-gap: 10px;
   background-image: linear-gradient(
     to bottom right,
     rgb(1, 65, 75) 12%,
@@ -541,11 +542,14 @@
     rgb(255, 255, 255) 70%,
     rgb(94, 157, 165) 100%
   );
-  width: 55%;
-  height: fit-content;
+  width: fit-content;
+  height: max-content;
   justify-content: center;
   align-items: center;
-  padding: 12px;
+  padding-top: 12px;
+  color: rgb(3, 53, 70);
+  font-family: Verdana;
+  font-size: 11px;
 }
 #content #Contact #contactTitle {
   width: fit-content;
@@ -565,65 +569,66 @@
   width: 85%;
 }
 #content #Contact #ContactDetails {
-  width: 100%;
+  width: 90%;
   height: max-content;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  column-gap: 5px;
-  row-gap: 5px;
-}
-#content #Contact #ContactDetails #Location,
-#Call,
-#Mail {
-  display: flex;
   flex-direction: column;
-  width: fit-content;
-  font-family: Verdana;
-  font-size: 10.5px;
-  color: rgb(205, 216, 221);
-  padding: 10px;
-  margin: 0px;
-  line-height: 17px;
-  background-color: rgb(3, 53, 70);
+  row-gap: 15px;
+  align-items:flex-start;
 }
-#content #Contact #ContactDetails #Location #LocationImage {
+#content #Contact #ContactDetails #call,
+#mail,
+#website,
+#gitHub,
+#linkedIn,
+#Location {
   display: flex;
   flex-direction: row;
-  column-gap: 10px;
-  width: 30px;
-  height: 30px;
-  align-items: center;
+  column-gap: 12px;
 }
-#content #Contact #ContactDetails #Location #LocationImage img {
-  width: 100%;
-  height: 30px;
+#content #Contact #ContactDetails #call img {
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
 }
-#content #Contact #ContactDetails #Call #CallImage {
-  display: flex;
-  flex-direction: row;
-  column-gap: 10px;
-  width: 30px;
-  height: 30px;
-  align-items: center;
-}
-#content #Contact #ContactDetails #Call #CallImage img {
-  width: 100%;
-  height: 30px;
+#content #Contact #ContactDetails #mail img {
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
 }
-#content #Contact #ContactDetails #Mail #MailImage {
-  display: flex;
-  flex-direction: row;
-  column-gap: 10px;
-  width: 30px;
-  height: 30px;
-  align-items: center;
+#content #Contact #ContactDetails #mail a {
+  text-decoration: none;
+  color: rgb(3, 53, 70);
 }
-#content #Contact #ContactDetails #Mail #MailImage img {
-  width: 100%;
-  height: 30px;
+#content #Contact #ContactDetails #website img {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+#content #Contact #ContactDetails #website a {
+  text-decoration: none;
+  color: rgb(3, 53, 70);
+}
+#content #Contact #ContactDetails #linkedIn img {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+#content #Contact #ContactDetails #linkedIn a {
+  text-decoration: none;
+  color: rgb(3, 53, 70);
+}
+#content #Contact #ContactDetails #gitHub img {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+#content #Contact #ContactDetails #gitHub a {
+  text-decoration: none;
+  color: rgb(3, 53, 70);
+}
+#content #Contact #ContactDetails #Location img {
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
 }
