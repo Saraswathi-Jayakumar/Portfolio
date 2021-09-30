@@ -10,6 +10,7 @@
   background-color: rgb(240, 227, 204);
   width: 100%;
   height: max-content;
+  padding-bottom: 5px;
 }
 #content #homePage {
   width: 99%;
@@ -128,12 +129,12 @@
   align-items: center;
 }
 #content #homePage #Intro #SLogo {
-  width: 18%;
+  width: 20%;
   height: 20vh;
   padding-bottom: 15px;
 }
 #content #homePage #Intro #SLogo img {
-  width: 66%;
+  width: 88%;
   height: 20vh;
   animation: whril 5s linear infinite;
 }
@@ -150,13 +151,13 @@
   30% {
     transform: rotateY(180deg);
   }
-  35%{
+  35% {
     transform: rotateY(270deg);
   }
-  47%{
+  47% {
     transform: rotateY(360deg);
   }
-  53%{
+  53% {
     transform: rotateY(-360deg);
   }
   65% {
@@ -171,7 +172,7 @@
   80% {
     transform: rotateY(0deg);
   }
-  100%{
+  100% {
     transform: rotate(0deg);
   }
 }
@@ -409,7 +410,6 @@
     transform: rotate(-10deg);
   }
 }
-
 #content #Project #ProjectSection span a {
   text-decoration: none;
   color: whitesmoke;
@@ -543,7 +543,6 @@
 #content #Contact {
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
   background-image: linear-gradient(
     to bottom right,
     rgb(1, 65, 75) 12%,
@@ -552,38 +551,33 @@
     rgb(94, 157, 165) 100%
   );
   width: fit-content;
-  height: max-content;
-  justify-content: center;
+  height: fit-content;
   align-items: center;
   padding-top: 12px;
   color: rgb(3, 53, 70);
   font-family: Verdana;
-  font-size: 11px;
+  font-size: 12px;
+  padding-bottom: 12px;
 }
 #content #Contact #contactTitle {
   width: fit-content;
   height: 4vh;
-  padding: 12px;
+  padding: 5px;
   font-family: sans-serif;
   color: rgb(1, 65, 75);
   font-size: 15px;
   font-variant: small-caps;
 }
 #content #Contact p {
-  font-family: Verdana;
-  font-size: 12px;
-  text-align: justify;
-  color: rgb(3, 53, 70);
   padding: 15px;
   width: 85%;
 }
 #content #Contact #ContactDetails {
   width: 90%;
-  height: max-content;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   row-gap: 15px;
-  align-items:flex-start;
 }
 #content #Contact #ContactDetails #call,
 #mail,
@@ -594,6 +588,7 @@
   display: flex;
   flex-direction: row;
   column-gap: 12px;
+  height: fit-content;
 }
 #content #Contact #ContactDetails #call img {
   width: 18px;
